@@ -26,7 +26,6 @@ async function destroy(req, res) {
 }
 
 async function list(req, res) {
-    console.log("moo")
     const data = await service.list(req.params.movieId);
     res.json({ data });
 }
